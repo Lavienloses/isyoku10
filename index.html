@@ -9,37 +9,114 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Shippori+Mincho&display=swap" rel="stylesheet">
 
-    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="main.css" rel="stylesheet"  type="text/css">
 </head>
 
 <body>
+    <header>
+        <div class="h_frame">
+            <div class="rogo">
+                <h1>
+                    ロゴ
+                </h1>
+            
+            <nav class="nav_pc">
+                <ul class="nav_list_pc">
+                    <li>
+                        <a href="#">ホーム</a>
+                    </li>
+                    <li>
+                        <a href="#kenpoku">県北エリア</a>
+                    </li>
+                    <li>
+                        <a href="#kennan">県南エリア</a>
+                    </li>
+                    <li>
+                        <a href="#engan">沿岸エリア</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+                <span class="menu_btn_tel">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span><!--menu_btn-->
+                    
+                <nav class="nav">
+                    <ul class="nav_list">
+
+                        <li class="nav_list_li">
+                            <a href="">ホーム</a>
+                        </li><!--nav_list_li-->
+
+                        <li class="nav_list_li">
+                            <a href="">何か</a>
+                        </li><!--nav_list_li-->
+
+                        <li class="nav_list_li">
+                            <a href="">どこか</a>
+                        </li><!--nav_list_li-->
+
+                        <li class="nav_list_li">
+                            <a href="">何処へ</a>
+                        </li><!--nav_list_li-->
+
+                    </ul><!--nav_list-->
+                </nav><!--nav-->
+        </div><!--h_frame-->
+    </header>
+
+
+<main>
+    <div id="all_box"><!--main部分大枠画面縮小div-->
+        <div class="key_img">
+            <img src="key_img1.JPG" alt="キービジュアル">
+             <div class="key_img_frame">
+              <h2 class="key_text1">
+                  <span>テキストテキストテキスト</span>
+              </h2>
+              <h3 class="key_text2">
+                <ul>
+                    <li><span>・岩手県の様々な場所を走ります</span></li>
+                    <li><span>・行きたいところに行きます</span></li>
+                    <li><span>・必ず何かを食べます</span></li>
+                    <li><span>・バイクでしか走りません</span></li>
+                
+                </ul>
+              </h3>
+             </div>
+        </div>
+    </div><!--main部分大枠画面縮小div-->
+
 
     <div class="category"><!--ルート一覧大枠div-->
         <h3 class="title"><!--ルート紹介タイトル-->
             ツーリングルート一覧
         </h3>
-        <a href="">全てのコースを見るのだぁ</a><!--すべてのコースの一覧へ-->
+        <a href="rink.html">全てのコースを見るのだぁ</a><!--すべてのコースの一覧へ-->
 
-        <div class="route_box">
+        <div class="route_box" id="kenpoku">
             <h4>岩手県　県北エリア</h4>
             <a href="#" class="all_see">
                 全てを見る→
             </a>
         <ul class="route_ul"><!--ルート一覧ul-->
             <li class="route_plan"><!--ルート小分けli-->
-                <a href="">
+                <a href="rink.html">
                     <div class="plan_img_box">
                         <img src="airport2.jpg">
                     </div>
                     <div class="plan_text_box">
                         <h5 class="plan_title">
-                            テキストテキストテキスト
+                            花巻〜東和〜水沢
                         </h5>
                         <div class="plan_text">
                             <div class="plan_description">
                                 <span>
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                                    東和のパン屋さんや、水沢にある蔵まち、ハンバーガー屋さんに行ってきました。
                                 </span>
                             </div>
                         </div>
@@ -53,7 +130,7 @@
                     </div>
                     <div class="plan_text_box">
                         <h5 class="plan_title">
-                            テキストテキストテキスト
+                            花巻〜遠野
                         </h5>
                         <div class="plan_text">
                             <div class="plan_description">
@@ -108,7 +185,7 @@
        </div>
 
 
-       <div class="route_box">
+       <div class="route_box" id="kennan">
         <h4>岩手県　県南エリア</h4>
         <a href="#" class="all_see">
             全てを見る→
@@ -194,10 +271,125 @@
     </ul><!--コース一覧ul-->
    </div>
 
-    </div><!--コース一覧大枠div-->
 
 
-    
+   <div class="route_box" id="engan">
+    <h4>岩手県　沿岸エリア</h4>
+    <a href="#" class="all_see">
+        全てを見る→
+    </a>
+<ul class="route_ul"><!--ルート一覧ul-->
+    <li class="route_plan"><!--ルート小分けli-->
+        <a href="">
+            <div class="plan_img_box">
+                <img src="airport2.jpg">
+            </div>
+            <div class="plan_text_box">
+                <h5 class="plan_title">
+                    テキストテキストテキスト
+                </h5>
+                <div class="plan_text">
+                    <div class="plan_description">
+                        <span>
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="route_plan">
+        <a href="">
+            <div class="plan_img_box">
+                <img src="airport3.jpg">
+            </div>
+            <div class="plan_text_box">
+                <h5 class="plan_title">
+                    テキストテキストテキスト
+                </h5>
+                <div class="plan_text">
+                    <div class="plan_description">
+                        <span>
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+    <li class="route_plan">
+        <a href="">
+            <div class="plan_img_box">
+                <img src="airport3.jpg">
+            </div>
+            <div class="plan_text_box">
+                <h5 class="plan_title">
+                    テキストテキストテキスト
+                </h5>
+                <div class="plan_text">
+                    <div class="plan_description">
+                        <span>
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
 
+    <li class="route_plan">
+        <a href="">
+            <div class="plan_img_box">
+                <img src="airport3.jpg">
+            </div>
+            <div class="plan_text_box">
+                <h5 class="plan_title">
+                    テキストテキストテキスト
+                </h5>
+                <div class="plan_text">
+                    <div class="plan_description">
+                        <span>
+                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul><!--コース一覧ul-->
+</div>
+
+
+<!--
+    <div class="recommend_box">
+        <h3>おすすめスポットなど</h3>
+        <a href="#">全てを見る→</a>
+        
+        <div class="recomend_about_box">
+            <div class="about_box">
+                <div class="about_box_img">
+                    <img src="airport2.jpg" alt="おすすめ写真１">
+                    <div class="about_box_text">
+                        <h5>テキストテキストテキスト</h5>
+                    </div>
+                    <span>テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+                </div>
+            </div>
+        </div>
+
+         <div class="about_box"> 
+            <div class="about_box_img">
+                <img src="airport2.jpg" alt="おすすめ写真１">
+                <div class="about_box_text">
+                    <h5>テキストテキストテキスト</h5>
+                </div>
+                <span>テキストテキストテキストテキストテキストテキストテキストテキスト</span>
+            </div>
+        </div>
+    </div>-->
+
+
+</div><!--コース一覧大枠div-->
+</main>
 </body>
 </html>
