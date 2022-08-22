@@ -1,9 +1,23 @@
 @charset "UTF-8";
 
 /******基本設定******/
+body {
+    font-family: url(https://fonts.googleapis.com/css?family=Anton&text=0123456789);
+}
+
+@font-face {
+    font-family: number;
+    src: local('Hiragino Mincho ProN');
+    unicode-range: U+0030-0039;
+  }
+
 * {
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style: none;
 }
 
 html {
@@ -17,8 +31,15 @@ a {
 
 a:hover{
     transition: all .4s;
-    transform: scale(1.2, 1.2);
+    transform: scale(1.1, 1.1);
 
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
 }
 
 
@@ -26,7 +47,7 @@ a:hover{
 /******header設定******/
 header {
     width: 100%;
-    height: 70px;
+    height: 5vw;
     position: fixed;
     left: 0;
     z-index: 9999;
@@ -46,7 +67,7 @@ header {
 .nav_list_pc {
     position: relative;
     display: flex;
-    width: 500px;
+    width: 35vw;
 }
 
 .nav_list_pc li {
@@ -59,6 +80,8 @@ header {
     cursor: pointer;
     border-style: solid;
     border-width: 0 1px 0 0;
+    /*font-weight: bold;*/
+    font-size: clamp(0.8rem, 0.671rem + 0.64vw, 1.7rem);
 }
 
 .rogo {
@@ -67,9 +90,15 @@ header {
 }
 
 .rogo h1 {
-    padding: 10px 40px;
+    padding: 0px 40px;
 }
 
+.rogo img {
+    width: 100%;
+    max-height: 34px;
+}
+
+/*
 .rogo h1::before {
     content: "★";
     display: block;
@@ -80,7 +109,7 @@ header {
     top: 0;
     bottom: 0;
     margin: auto;
-}
+}*/
 
 .nav_pc {
     padding-right: 20px;
@@ -159,7 +188,7 @@ header {
 
 .nav_list_li {
     list-style: none;
-    font-size: 2em;
+    font-size: 2rem;
     padding: 2rem;
 }
 
@@ -207,8 +236,8 @@ header {
 
 .key_text1 {
     position: absolute;
-    top: 20vw;
-    left: 30vw;
+    top: 50%;
+    left: 30%;
     -webkit-transform: translate(-50%, -50%); /* Safari用 */
     transform: translate(-50%, -50%);
     box-sizing:  border-box; 
@@ -219,6 +248,14 @@ header {
     font-family: sans-serif;
     white-space: nowrap;
   }
+
+.key_text1 span {
+    /*writing-mode: vertical-rl;*/
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    vertical-align: middle;
+    display: table-cell;
+}
   
 
 .key_text2 {
@@ -229,7 +266,7 @@ header {
     transform: translate(-70%, -30%);
     box-sizing: border-box;
     /* font-size: 1.5rem; */
-    font-size: 2.0vw;
+    font-size: clamp(0.625rem, 0.446rem + 0.89vw, 1.875rem);
     /* width: 42vh; */
     font-weight: 300;
     color: white;
@@ -250,15 +287,17 @@ header {
 }
 
 .title {
-    font-size: 2rem;
+    font-size: clamp(1.45rem, 1.286rem + 0.82vw, 2.6rem);
     color: black;
-    margin: 6em 0 5em;
+    margin: 5.5em 0 3em;
 }
 
 
 
 .route_box {
     position: relative;
+    margin-bottom: 10em;
+    border-bottom: 1px dotted #333;
 }
 
 .route_box h4 {
@@ -270,8 +309,8 @@ header {
 .all_see {
     position: absolute;
     right: 0;
-    font-size: 0.8rem;
-    top: 3vw;
+    font-size: clamp(0.5rem, 0.414rem + 0.43vw, 1.1rem);
+    top: 6%;
 }
 
 
@@ -285,15 +324,28 @@ header {
    /*flex: 1; */
     /* flex-basis: 236px; */
     /* flex-grow: 2; */
-    min-width: 23vw;
-    max-width: 24.3vw;
+    /* min-width: 23vw;
+    max-width: 24.3vw; */
+    width: 23vw;
     display: inline-block;
     margin: 20px 9px 80px;
     /*border: 1px solid red;*/
     border-radius: 10px;
     overflow: hidden;
     transition: all .5s ease-out;
+    padding: 1%;
+    border: 1px solid #c4c1c1;
 }
+
+.route_ul::-webkit-scrollbar{/*横スクロールバー非表示*/
+    display: none;
+}
+
+#engan {
+    margin-bottom: 25%;
+    border-bottom: none;
+}
+
 
 
 
@@ -326,7 +378,7 @@ header {
     /* transform: translate(-50%,-50%); */
     object-fit: contain;
     vertical-align: middle;/*これ入れると、親要素の高さが揃って、下の文字の高さが揃う*/
-
+    border-radius: 10px;
     /******お遊びアニメーション******/
     transition: all 0.45s;
     /******お遊びアニメーション******/
@@ -338,7 +390,7 @@ header {
 }
 
 .plan_title {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 0.957rem + 0.21vw, 1.3rem);
     margin: 0.3em 0 0.3em 0;
 }
 
@@ -436,13 +488,13 @@ header {
 }
 
 .time_shift {
-    padding: 0em 1em 0vw 4em;
+    padding: 0em 1.1111vw 0vw 4.4444vw;
     text-align: center;
     position: relative;
 }
 
 .shift dl {
-    padding: 1em 0 1.5em 0;
+    padding: 1.27778vw 0 1.66667vw 1.11vw
 }
 
 .time {
@@ -455,9 +507,6 @@ header {
     font-size: 1.2vw;
 }
 
-
-
-
 .time::before {
     margin-left: -13px;
     margin-right: 40px;
@@ -469,15 +518,183 @@ header {
 }
 
 .shift::before {
-    content: '●';
+    content: '';
     display: block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
     position: absolute;
-    left: -8px;
+    left: -6.1px;
     top: 16px;
     margin-right: 17px;
 }
 
 
+
+/******スポット詳細部分******/
+
+.plan_description.rink {
+    padding-top: 13em;
+}
+
+.plan_description {
+    padding-top: 2em;
+}
+
+
+.plan_list {
+    position: relative;
+}
+
+.plan_list_li {
+    border-left: 1px solid #333; 
+    padding-left: 3em;
+    padding-bottom: 5em;
+    border-left: 1px solid #333;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.li_frame {
+flex: 1;
+    /*position: relative;*/
+}
+
+.li_title {
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+
+.li_title span {
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.7rem);
+    font-weight: 600;
+    color: #333;
+    text-align: left;
+    font-weight: bold;
+}
+
+.li_time {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #333;
+    font-size: clamp(1.6rem, 1.514rem + 0.43vw, 2.2rem);
+    font-weight: 100;
+}
+
+.li_time::before {
+    content: '';
+    display: inline-block;
+    background-color: white;
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -0.39em;
+    margin-right: 25px;
+}
+
+.li_genre {
+    /*width: 70px;*/
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.li_genre span {
+    display: inline;
+    padding: 0.3em;
+    font-size: 1.1rem;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+.li_explanation {
+    padding-top: 0.5em;
+    padding-bottom: 2em;
+    text-align: left;
+    border-bottom: 1px solid #c4c1c1;
+    letter-spacing: 0.18em;
+    line-height: 1.4rem;
+
+}
+
+.li_explanation p {
+    padding: 0 1.5em 0 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.information {
+    padding-bottom: 1em;
+    text-align: left;
+    /*display: inline-block;*/
+}
+
+.info_text {
+    text-align: left;
+    padding-bottom: 0.4em;
+}
+    
+.information p{
+    font-size: 0.8rem;
+    /*display: inline-block;*/
+}
+
+
+.plan_flex {
+    flex: 1;
+    padding-left: 2em;
+}
+
+.li_img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.li_img2 {
+    text-align: center;
+}
+
+.li_img2 img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.map_box {
+    width:100%;
+    height: 400px;
+    padding-top: 3em;
+    padding-bottom: 5em;
+}
+
+
+
+/******スポット詳細部分終わり******/
+
+
+
+.f_box {
+    width: 100%;
+    height: 10vw;
+    background-color: #333;
+    color: white;
+}
+
+h6 {
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 10vw;
+    font-size: clamp(0.2rem, -0.071rem + 1.36vw, 2.1rem);
+    letter-spacing: 0.25em;
+}
 
 
 
@@ -487,14 +704,27 @@ header {
 /******レスポンシブ設定等******/
 
 @media screen and (max-width: 900px){
+    header {
+        height: 70px;
+    }
+
     #all_box {
         padding-right: 0;
         padding-left: 0;
     }
 
 
-    .nav_pc, .rogo {
+    .nav_pc {
         display: none;
+    }
+
+    .rogo {
+        display: block;
+        text-align: center;
+    }
+
+    .rogo img {
+        width: 34px;
     }
 
     .route_ul {
@@ -505,11 +735,9 @@ header {
 
     .route_plan {
         width: 78vw;
-        min-width: 90vw;
-
+        min-width: 87vw;
         scroll-snap-align: start;
     }
-
 
     .category {
         padding-right: 5%;
@@ -519,13 +747,48 @@ header {
     .route_box h4 {
         padding: 3em 0 3em 0;
     }
-    
+
     .all_see {
-        top: 20vw;
+        top: 20%;
     }
+
+
+
+
+.time_shift {
+    padding: 3.33333vw 1.11111vw 0vw 7.44444vw;
 }
 
 
+
+.plan_list_li {
+    display: block;
+    padding-left: 0;
+}
+
+.li_time::before {
+
+    width: 10px;
+    height: 10px;
+    margin-left: -0.3em;
+}
+
+.li_img {
+    display: none;
+}
+
+.li_img2 {
+    display: block;
+ }
+}
+
+
+
+
+@media screen and (min-width: 900px){
+    .li_img2 {
+        display: none;
+}
 
 
 @media screen and (min-width: 700px) {
@@ -534,3 +797,9 @@ header {
     }
 }
 
+}
+
+
+.no_link {
+    pointer-events: none
+}

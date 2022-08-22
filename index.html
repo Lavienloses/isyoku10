@@ -5,10 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>岩手　観光サイト</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Shippori+Mincho&display=swap" rel="stylesheet">
-
     <link href="reset.css" rel="stylesheet" type="text/css">
     <link href="main.css" rel="stylesheet"  type="text/css">
 </head>
@@ -17,27 +13,28 @@
     <header>
         <div class="h_frame">
             <div class="rogo">
-                <h1>
-                    ロゴ
-                </h1>
-            
-            <nav class="nav_pc">
-                <ul class="nav_list_pc">
-                    <li>
-                        <a href="#">ホーム</a>
-                    </li>
-                    <li>
-                        <a href="#kenpoku">県北エリア</a>
-                    </li>
-                    <li>
-                        <a href="#kennan">県南エリア</a>
-                    </li>
-                    <li>
-                        <a href="#engan">沿岸エリア</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+                <a href="#">
+                   <h1>
+                       <img src="img/bike.png">
+                   </h1>
+                </a>
+                <nav class="nav_pc">
+                    <ul class="nav_list_pc">
+                        <li>
+                            <a href="#kenpoku">県北</a>
+                        </li>
+                        <li>
+                            <a href="#kenou">県央</a>
+                        </li>
+                        <li>
+                            <a href="#kennan">県南</a>
+                        </li>
+                        <li>
+                            <a href="#engan">沿岸</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
 
                 <span class="menu_btn_tel">
                     <i></i>
@@ -49,19 +46,19 @@
                     <ul class="nav_list">
 
                         <li class="nav_list_li">
-                            <a href="">ホーム</a>
+                            <a href="#kenpoku">県北</a>
                         </li><!--nav_list_li-->
 
                         <li class="nav_list_li">
-                            <a href="">何か</a>
+                            <a href="#kenou">県央</a>
                         </li><!--nav_list_li-->
 
                         <li class="nav_list_li">
-                            <a href="">どこか</a>
+                            <a href="#kennan">県南</a>
                         </li><!--nav_list_li-->
 
                         <li class="nav_list_li">
-                            <a href="">何処へ</a>
+                            <a href="#engan">沿岸</a>
                         </li><!--nav_list_li-->
 
                     </ul><!--nav_list-->
@@ -73,20 +70,14 @@
 <main>
     <div id="all_box"><!--main部分大枠画面縮小div-->
         <div class="key_img">
-            <img src="key_img1.JPG" alt="キービジュアル">
+            <img src="key_img2.JPG" alt="キービジュアル">
              <div class="key_img_frame">
               <h2 class="key_text1">
-                  <span>テキストテキストテキスト</span>
+                  <span>
+                    「バイクで行こう」は、<i>もう常識</i>
+                  </span>
               </h2>
-              <h3 class="key_text2">
-                <ul>
-                    <li><span>・岩手県の様々な場所を走ります</span></li>
-                    <li><span>・行きたいところに行きます</span></li>
-                    <li><span>・必ず何かを食べます</span></li>
-                    <li><span>・バイクでしか走りません</span></li>
-                
-                </ul>
-              </h3>
+              
              </div>
         </div>
     </div><!--main部分大枠画面縮小div-->
@@ -94,29 +85,30 @@
 
     <div class="category"><!--ルート一覧大枠div-->
         <h3 class="title"><!--ルート紹介タイトル-->
-            ツーリングルート一覧
+            岩手県のおすすめルート
         </h3>
-        <a href="rink.html">全てのコースを見るのだぁ</a><!--すべてのコースの一覧へ-->
+        <!-- <a href="rink.html">全てのコースを見るのだぁ</a>すべてのコースの一覧へ -->
 
+<!---県北エリア--->        
         <div class="route_box" id="kenpoku">
             <h4>岩手県　県北エリア</h4>
-            <a href="#" class="all_see">
+            <!--<a href="#" class="all_see no_rink">
                 全てを見る→
-            </a>
+            </a>-->
         <ul class="route_ul"><!--ルート一覧ul-->
             <li class="route_plan"><!--ルート小分けli-->
-                <a href="rink.html">
+                <a href="#" class="no_link">
                     <div class="plan_img_box">
-                        <img src="airport2.jpg">
+                        <img src="img/top/airport2.jpg">
                     </div>
                     <div class="plan_text_box">
                         <h5 class="plan_title">
-                            花巻〜東和〜水沢
+                            まだ行けてません、ゴメンナサイ
                         </h5>
                         <div class="plan_text">
                             <div class="plan_description">
                                 <span>
-                                    東和のパン屋さんや、水沢にある蔵まち、ハンバーガー屋さんに行ってきました。
+                                    まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                                 </span>
                             </div>
                         </div>
@@ -124,18 +116,18 @@
                 </a>
             </li>
             <li class="route_plan">
-                <a href="">
+                <a href="" class="no_link">
                     <div class="plan_img_box">
-                        <img src="airport3.jpg">
+                        <img src="img/top/airport2.jpg">
                     </div>
                     <div class="plan_text_box">
                         <h5 class="plan_title">
-                            花巻〜遠野
+                            まだ行けてません、ゴメンナサイ
                         </h5>
                         <div class="plan_text">
                             <div class="plan_description">
                                 <span>
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                                    まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                                 </span>
                             </div>
                         </div>
@@ -143,18 +135,18 @@
                 </a>
             </li>
             <li class="route_plan">
-                <a href="">
+                <a href="" class="no_link">
                     <div class="plan_img_box">
-                        <img src="airport3.jpg">
+                        <img src="img/top/airport2.jpg">
                     </div>
                     <div class="plan_text_box">
                         <h5 class="plan_title">
-                            テキストテキストテキスト
+                            まだ行けてません、ゴメンナサイ
                         </h5>
                         <div class="plan_text">
                             <div class="plan_description">
                                 <span>
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                                    まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                                 </span>
                             </div>
                         </div>
@@ -163,18 +155,18 @@
             </li>
 
             <li class="route_plan">
-                <a href="">
+                <a href="" class="no_link">
                     <div class="plan_img_box">
-                        <img src="airport3.jpg">
+                        <img src="img/top/airport2.jpg">
                     </div>
                     <div class="plan_text_box">
                         <h5 class="plan_title">
-                            テキストテキストテキスト
+                            まだ行けてません、ゴメンナサイ
                         </h5>
                         <div class="plan_text">
                             <div class="plan_description">
                                 <span>
-                                    テキストテキストテキストテキストテキストテキストテキストテキスト
+                                    まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                                 </span>
                             </div>
                         </div>
@@ -184,26 +176,26 @@
         </ul><!--コース一覧ul-->
        </div>
 
-
-       <div class="route_box" id="kennan">
-        <h4>岩手県　県南エリア</h4>
-        <a href="#" class="all_see">
+<!---県央エリア--->
+       <div class="route_box" id="kenou">
+        <h4>岩手県　県央エリア</h4>
+        <!-- <a href="kenou1.html" class="all_see">
             全てを見る→
-        </a>
+        </a>-->
     <ul class="route_ul"><!--ルート一覧ul-->
         <li class="route_plan"><!--ルート小分けli-->
-            <a href="">
+            <a href="kenou1.html">
                 <div class="plan_img_box">
-                    <img src="airport2.jpg">
+                    <img src="img/top/airport2.jpg">
                 </div>
                 <div class="plan_text_box">
                     <h5 class="plan_title">
-                        テキストテキストテキスト
+                        花巻駅〜岩洞湖レストハウス〜道の駅 三田貝分校〜岩山展望台
                     </h5>
                     <div class="plan_text">
                         <div class="plan_description">
                             <span>
-                                テキストテキストテキストテキストテキストテキストテキストテキスト
+                                花巻駅を出発し、岩洞湖、その奥にある道の駅 三田貝分校、そして岩山展望台へ
                             </span>
                         </div>
                     </div>
@@ -211,18 +203,18 @@
             </a>
         </li>
         <li class="route_plan">
-            <a href="">
+            <a href="" class="no_link">
                 <div class="plan_img_box">
-                    <img src="airport3.jpg">
+                    <img src="img/top/airport2.jpg">
                 </div>
                 <div class="plan_text_box">
                     <h5 class="plan_title">
-                        テキストテキストテキスト
+                        まだ行けてません、ゴメンナサイ
                     </h5>
                     <div class="plan_text">
                         <div class="plan_description">
                             <span>
-                                テキストテキストテキストテキストテキストテキストテキストテキスト
+                                まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                             </span>
                         </div>
                     </div>
@@ -230,18 +222,105 @@
             </a>
         </li>
         <li class="route_plan">
-            <a href="">
+            <a href="" class="no_link">
                 <div class="plan_img_box">
-                    <img src="airport3.jpg">
+                    <img src="img/top/airport2.jpg">
                 </div>
                 <div class="plan_text_box">
                     <h5 class="plan_title">
-                        テキストテキストテキスト
+                        まだ行けてません、ゴメンナサイ
                     </h5>
                     <div class="plan_text">
                         <div class="plan_description">
                             <span>
-                                テキストテキストテキストテキストテキストテキストテキストテキスト
+                                まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    
+        <li class="route_plan">
+            <a href="" class="no_link">
+                <div class="plan_img_box">
+                    <img src="img/top/airport2.jpg">
+                </div>
+                <div class="plan_text_box">
+                    <h5 class="plan_title">
+                        まだ行けてません、ゴメンナサイ
+                    </h5>
+                    <div class="plan_text">
+                        <div class="plan_description">
+                            <span>
+                                まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul><!--コース一覧ul-->
+    </div>
+
+<!---県南エリア--->
+       <div class="route_box" id="kennan">
+        <h4>岩手県　県南エリア</h4>
+        <!--<a href="#" class="all_see no_link">
+            全てを見る→
+        </a>-->
+    <ul class="route_ul"><!--ルート一覧ul-->
+        <li class="route_plan"><!--ルート小分けli-->
+            <a href="kennan1.html">
+                <div class="plan_img_box">
+                    <img src="img/link/humberger2.jpg">
+                </div>
+                <div class="plan_text_box">
+                    <h5 class="plan_title">
+                        花巻〜東和〜水沢
+                    </h5>
+                    <div class="plan_text">
+                        <div class="plan_description">
+                            <span>
+                                東和町のパン屋さん、水沢市の蔵まち、そしてハンバーガー屋さんへ。
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="route_plan">
+            <a href="kennan2.html">
+                <div class="plan_img_box">
+                    <img src="img/link/takasimizu2_ok.jpg">
+                </div>
+                <div class="plan_text_box">
+                    <h5 class="plan_title">
+                        花巻空港〜高清水展望台〜道の駅 遠野風の丘
+                    </h5>
+                    <div class="plan_text">
+                        <div class="plan_description">
+                            <span>
+                                花巻空港近くの広場から、遠野市の高清水展望台、帰り際に道の駅 遠野風の丘へ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </li>
+        <li class="route_plan">
+            <a href="" class="no_link">
+                <div class="plan_img_box">
+                    <img src="img/top/airport2.jpg">
+                </div>
+                <div class="plan_text_box">
+                    <h5 class="plan_title">
+                        まだ行けてません、ゴメンナサイ
+                    </h5>
+                    <div class="plan_text">
+                        <div class="plan_description">
+                            <span>
+                                まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                             </span>
                         </div>
                     </div>
@@ -250,18 +329,18 @@
         </li>
 
         <li class="route_plan">
-            <a href="">
+            <a href="" class="no_link">
                 <div class="plan_img_box">
-                    <img src="airport3.jpg">
+                    <img src="img/top/airport2.jpg">
                 </div>
                 <div class="plan_text_box">
                     <h5 class="plan_title">
-                        テキストテキストテキスト
+                        まだ行けてません、ゴメンナサイ
                     </h5>
                     <div class="plan_text">
                         <div class="plan_description">
                             <span>
-                                テキストテキストテキストテキストテキストテキストテキストテキスト
+                                まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                             </span>
                         </div>
                     </div>
@@ -272,26 +351,26 @@
    </div>
 
 
-
+<!---沿岸エリア--->
    <div class="route_box" id="engan">
     <h4>岩手県　沿岸エリア</h4>
-    <a href="#" class="all_see">
+    <!--<a href="#" class="all_see no_link">
         全てを見る→
-    </a>
+    </a>-->
 <ul class="route_ul"><!--ルート一覧ul-->
     <li class="route_plan"><!--ルート小分けli-->
-        <a href="">
+        <a href="" class="no_link">
             <div class="plan_img_box">
-                <img src="airport2.jpg">
+                <img src="img/top/airport2.jpg">
             </div>
             <div class="plan_text_box">
                 <h5 class="plan_title">
-                    テキストテキストテキスト
+                    まだ行けてません、ゴメンナサイ
                 </h5>
                 <div class="plan_text">
                     <div class="plan_description">
                         <span>
-                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                         </span>
                     </div>
                 </div>
@@ -299,18 +378,18 @@
         </a>
     </li>
     <li class="route_plan">
-        <a href="">
+        <a href="" class="no_link">
             <div class="plan_img_box">
-                <img src="airport3.jpg">
+                <img src="img/top/airport2.jpg">
             </div>
             <div class="plan_text_box">
                 <h5 class="plan_title">
-                    テキストテキストテキスト
+                    まだ行けてません、ゴメンナサイ
                 </h5>
                 <div class="plan_text">
                     <div class="plan_description">
                         <span>
-                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                         </span>
                     </div>
                 </div>
@@ -318,18 +397,18 @@
         </a>
     </li>
     <li class="route_plan">
-        <a href="">
+        <a href="" class="no_link">
             <div class="plan_img_box">
-                <img src="airport3.jpg">
+                <img src="img/top/airport2.jpg">
             </div>
             <div class="plan_text_box">
                 <h5 class="plan_title">
-                    テキストテキストテキスト
+                    まだ行けてません、ゴメンナサイ
                 </h5>
                 <div class="plan_text">
                     <div class="plan_description">
                         <span>
-                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                         </span>
                     </div>
                 </div>
@@ -337,19 +416,19 @@
         </a>
     </li>
 
-    <li class="route_plan">
-        <a href="">
+    <li class="route_plan last">
+        <a href="" class="no_link">
             <div class="plan_img_box">
-                <img src="airport3.jpg">
+                <img src="img/top/airport2.jpg">
             </div>
             <div class="plan_text_box">
                 <h5 class="plan_title">
-                    テキストテキストテキスト
+                    まだ行けてません、ゴメンナサイ
                 </h5>
                 <div class="plan_text">
                     <div class="plan_description">
                         <span>
-                            テキストテキストテキストテキストテキストテキストテキストテキスト
+                            まだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイまだ行けてません、ゴメンナサイ
                         </span>
                     </div>
                 </div>
@@ -390,6 +469,16 @@
 
 
 </div><!--コース一覧大枠div-->
+
+<footer>
+    <div class="f_box">
+        <h6>
+            copylight: all reserved Matsuda Shoki.
+        </h6>
+    </div>
+</footer>
 </main>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
